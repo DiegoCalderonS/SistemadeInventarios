@@ -15,8 +15,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio.IRepositorio
                                     string incluirPropiedades = null,
                                     bool isTracking = true 
             );
-        Task<T> ObtenerPrimero(Expression<Func<T, bool>> filtro = null,
-                                    string incluirPropiedades = null,
+        Task<T> ObtenerPrimero(Expression<Func<T, bool>> filtro = null, string incluirPropiedades = null,
                                     bool isTracking = true
             );
         Task Agregar(T entidad);
